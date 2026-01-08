@@ -1,137 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MARFIGAN | Camaronera Industrial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARFIGAN | Camaronera</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-:root{
---azul:#0b3c5d;
---celeste:#1ca3ec;
---gris:#f4f6f8;
-}
+    <style>
+        :root{
+            --azul:#0b3c5d;
+            --celeste:#1ca3ec;
+            --gris:#f4f6f8;
+            --oscuro:#1e1e1e;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-body{
-scroll-behavior:smooth;
-}
+        body{color:var(--oscuro);line-height:1.6;}
 
-/* ===== HERO ===== */
-header{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
-color:white;
-display:flex;
-flex-direction:column;
-}
+        /* HERO */
+        header{
+            height:100vh;
+            background:
+                linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+                url("https://images.unsplash.com/photo-1627485937980-bcfe3c6d594a?auto=format&fit=crop&w=1600&q=80");
+            background-size:cover;
+            background-position:center;
+            color:white;
+            display:flex;
+            flex-direction:column;
+        }
 
-nav{
-display:flex;
-justify-content:space-between;
-padding:25px 8%;
-background:rgba(0,0,0,.45);
-}
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            background:rgba(0,0,0,.4);
+        }
 
-nav h1{
-font-size:28px;
-}
+        nav h1{font-size:28px;font-weight:700;}
 
-nav ul{
-list-style:none;
-display:flex;
-gap:25px;
-}
+        nav ul{list-style:none;display:flex;gap:25px;}
 
-nav a{
-color:white;
-text-decoration:none;
-}
+        nav a{color:white;text-decoration:none;font-weight:500;}
 
-.hero{
-flex:1;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:0 10%;
-animation:fade 1.5s ease;
-}
+        .hero{
+            flex:1;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:0 10%;
+            animation:fadeUp 1.2s ease;
+        }
 
-.hero h2{
-font-size:48px;
-margin-bottom:15px;
-}
+        .hero h2{font-size:48px;margin-bottom:20px;}
+        .hero p{max-width:700px;margin:auto;font-size:18px;}
 
-/* ===== SECTIONS ===== */
-section{
-padding:80px 10%;
-}
+        section{padding:80px 10%;}
 
-.title{
-text-align:center;
-margin-bottom:50px;
-}
+        .section-title{text-align:center;margin-bottom:50px;}
+        .section-title h2{font-size:36px;color:var(--azul);}
 
-.title h2{
-color:var(--azul);
-font-size:36px;
-}
+        /* PRODUCTOS */
+        .products{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:35px;
+        }
 
-/* ===== PRODUCTOS ===== */
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
+        .product{
+            background:white;
+            border-radius:14px;
+            overflow:hidden;
+            box-shadow:0 10px 30px rgba(0,0,0,.1);
+            transition:.3s;
+            animation:fadeUp 1.2s ease;
+        }
 
-.product{
-background:white;
-border-radius:14px;
-overflow:hidden;
-box-shadow:0 8px 25px rgba(0,0,0,.1);
-transition:.3s;
-animation:fadeUp 1.2s ease;
-}
+        .product:hover{transform:translateY(-10px);}
 
-.product:hover{
-transform:translateY(-8px);
-}
+        .product img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
 
-.product img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
+        .product .content{padding:25px;}
 
-.product div{
-padding:20px;
-}
+        .product a{
+            display:inline-block;
+            margin-top:15px;
+            padding:10px 20px;
+            background:var(--celeste);
+            color:white;
+            text-decoration:none;
+            border-radius:6px;
+        }
 
-.product a{
-display:inline-block;
-margin-top:10px;
-background:var(--celeste);
-color:white;
-padding:10px 18px;
-border-radius:6px;
-text-decoration:none;
-}
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
 
-/* ===== FOOTER ===== */
-footer{
-background:#111;
-color:whi
+        @keyframes fadeUp{
+            from{opacity:0;transform:translateY(40px);}
+            to{opacity:1;transform:translateY(0);}
+        }
 
+        @media(max-width:768px){
+            .hero h2{font-size:32px;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>MARFIGAN</h1>
+        <ul>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h2>Producción Camaronera de Alta Calidad</h2>
+            <p>Empresa ecuatoriana dedicada al cultivo y exportación de camarón con estándares internacionales.</p>
+        </div>
+    </div>
+</header>
+
+<section id="productos">
+    <div class="section-title">
+        <h2>Nuestros Productos</h2>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1615484478245-09f3f6a98ef0" alt="">
+            <div class="content">
+                <h3>Camarón Entero</h3>
+                <p>Producto fresco de exportación.</p>
+                <a href="#">Más información</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1604908554105-0886458fcd82" alt="">
+            <div class="content">
+                <h3>Camarón Congelado</h3>
+                <p>Procesado bajo normas sanitarias.</p>
+                <a href="#">Más información</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1623334044303-241021148842" alt="">
+            <div class="content">
+                <h3>Camarón Premium</h3>
+                <p>Seleccionado para mercados internacionales.</p>
+                <a href="#">Más información</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto">
+    <div class="section-title">
+        <h2>Contacto</h2>
+    </div>
+    <p style="text-align:center;">📧 marfigansahotmail.com</p>
+</section>
+
+<footer>
+    © 2026 MARFIGAN | Camaronera
+</footer>
+
+</body>
+</html>
