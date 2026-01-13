@@ -3,126 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MARFIGAN | Camaronera Ecuatoriana</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700;900&display=swap" rel="stylesheet">
+<title>MARFIGAN S.A. | Empresa Camaronera</title>
 
 <style>
 body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:#dfecec;
+    background:#f2f5f5;
     color:#111;
+    line-height:1.7;
 }
 
-/* BARRA SUPERIOR */
+/* CABECERA */
 header{
-    background:#063b3b;
+    background:#083737;
     color:white;
+    padding:20px 6%;
 }
 
-.topbar{
-    padding:15px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+header h1{
+    margin:0;
+    font-size:32px;
+    letter-spacing:3px;
 }
 
-.topbar h1{
-    font-size:30px;
-    font-weight:900;
-    letter-spacing:4px;
+nav{
+    margin-top:10px;
 }
 
-.topbar nav a{
+nav a{
     color:white;
     text-decoration:none;
-    margin-left:25px;
-    font-weight:700;
+    margin-right:25px;
+    font-weight:bold;
 }
 
-/* HERO */
+/* INICIO */
 .hero{
-    padding:70px 6%;
-    background:linear-gradient(180deg,#063b3b,#0b5c5c,#137f7f);
+    background:#0f5a5a;
+    color:white;
+    padding:60px 6%;
 }
 
 .hero h2{
-    font-size:78px;
-    font-weight:900;
-    margin:0;
-}
-
-.hero h3{
-    font-size:36px;
-    margin:15px 0;
-    font-weight:700;
+    font-size:48px;
+    margin-bottom:10px;
 }
 
 .hero p{
     font-size:20px;
     max-width:1200px;
-    line-height:1.8;
 }
 
 /* SECCIONES */
-.section{
-    padding:50px 6%;
+section{
     background:white;
-}
-
-.section.dark{
-    background:#f1f7f7;
-}
-
-.section h2{
-    font-size:40px;
-    margin-bottom:15px;
-    font-weight:900;
-    color:#063b3b;
-}
-
-.section p{
-    font-size:18px;
-    line-height:1.8;
+    padding:50px 6%;
+    margin:20px auto;
     max-width:1400px;
 }
 
-/* PRODUCTOS */
-.product-list{
+section h2{
+    font-size:34px;
+    color:#083737;
+    margin-bottom:15px;
+}
+
+section h3{
+    font-size:24px;
+    margin-top:25px;
+    color:#0f5a5a;
+}
+
+section p{
+    font-size:17px;
+}
+
+/* LISTAS */
+ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* TABLA */
+table{
+    width:100%;
+    border-collapse:collapse;
     margin-top:20px;
 }
 
-.product{
-    padding:18px 0;
-    border-bottom:2px solid #cfdede;
+th, td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:left;
 }
 
-.product h3{
-    font-size:24px;
-    margin-bottom:5px;
-    color:#0b5c5c;
-}
-
-.product p{
-    font-size:17px;
-    margin:0;
-}
-
-/* CONTACTO */
-.contact{
-    background:#063b3b;
+th{
+    background:#0f5a5a;
     color:white;
-    padding:50px 6%;
-}
-
-.contact p{
-    font-size:18px;
 }
 
 /* FOOTER */
 footer{
-    background:#031f1f;
+    background:#062626;
     color:white;
     text-align:center;
     padding:20px;
@@ -133,95 +120,126 @@ footer{
 <body>
 
 <header>
-    <div class="topbar">
-        <h1>MARFIGAN</h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#productos">Productos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </div>
-
-    <div class="hero" id="inicio">
-        <h2>MARFIGAN</h2>
-        <h3>Líderes en producción camaronera sostenible</h3>
-        <p>
-            MARFIGAN es una empresa camaronera ecuatoriana especializada en el cultivo,
-            procesamiento y comercialización de camarón de alta calidad. Nuestra operación
-            integra tecnología, control sanitario riguroso y prácticas responsables que
-            garantizan productos confiables para el mercado nacional e internacional,
-            fortaleciendo la economía del país y el desarrollo del sector acuícola.
-        </p>
-    </div>
+    <h1>MARFIGAN S.A.</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#empresa">La Empresa</a>
+        <a href="#procesos">Procesos</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 </header>
 
-<div class="section" id="nosotros">
-    <h2>Nosotros</h2>
+<div class="hero" id="inicio">
+    <h2>Producción camaronera responsable y sostenible</h2>
     <p>
-        Somos una organización dedicada al desarrollo de la actividad camaronera bajo
-        principios de eficiencia, responsabilidad ambiental y mejora continua. MARFIGAN
-        implementa procesos productivos controlados, garantizando trazabilidad, calidad
-        sanitaria y cumplimiento de normativas nacionales e internacionales.
+        MARFIGAN S.A. es una empresa ecuatoriana dedicada al cultivo, producción y
+        comercialización de camarón, orientada a satisfacer las exigencias del mercado
+        nacional e internacional mediante procesos técnicos controlados, responsabilidad
+        ambiental y altos estándares de calidad.
     </p>
 </div>
 
-<div class="section dark">
-    <h2>Quiénes Somos</h2>
+<section id="empresa">
+    <h2>La Empresa</h2>
     <p>
-        MARFIGAN está conformada por un equipo multidisciplinario de profesionales con
-        experiencia en acuicultura, control de calidad y gestión empresarial. Nuestro
-        objetivo es producir camarón de alto valor comercial, manteniendo estándares
-        técnicos que aseguren la satisfacción del cliente y la sostenibilidad de nuestras
-        operaciones.
+        MARFIGAN S.A. nace con el objetivo de fortalecer el sector acuícola ecuatoriano,
+        integrando buenas prácticas de cultivo, control sanitario y gestión empresarial.
+        Nuestra operación se desarrolla bajo normativas nacionales e internacionales
+        que garantizan productos seguros y competitivos.
     </p>
-</div>
 
-<div class="section" id="productos">
-    <h2>Productos</h2>
+    <h3>Misión</h3>
+    <p>
+        Producir y comercializar camarón de alta calidad, aplicando procesos eficientes,
+        sostenibles y responsables que generen valor para clientes, colaboradores y la
+        comunidad.
+    </p>
 
-    <div class="product-list">
-        <div class="product">
-            <h3>Camarón Entero Fresco</h3>
-            <p>Cosechado bajo controles estrictos, destinado a consumo nacional.</p>
-        </div>
+    <h3>Visión</h3>
+    <p>
+        Ser una empresa camaronera reconocida a nivel nacional e internacional por su
+        calidad, confiabilidad y compromiso con el desarrollo sostenible.
+    </p>
 
-        <div class="product">
-            <h3>Camarón Entero Congelado</h3>
-            <p>Procesado y conservado para mantener frescura y calidad.</p>
-        </div>
+    <h3>Valores Corporativos</h3>
+    <ul>
+        <li>Responsabilidad ambiental</li>
+        <li>Calidad y seguridad alimentaria</li>
+        <li>Ética y transparencia</li>
+        <li>Compromiso con el cliente</li>
+        <li>Mejora continua</li>
+    </ul>
+</section>
 
-        <div class="product">
-            <h3>Camarón sin Cabeza</h3>
-            <p>Presentación ideal para exportación y procesamiento industrial.</p>
-        </div>
+<section id="procesos">
+    <h2>Procesos Productivos</h2>
+    <p>
+        MARFIGAN S.A. desarrolla sus procesos bajo estrictos controles técnicos,
+        garantizando la trazabilidad del producto desde el cultivo hasta su
+        comercialización.
+    </p>
 
-        <div class="product">
-            <h3>Camarón Clasificado por Talla</h3>
-            <p>Estandarizado según requerimientos comerciales específicos.</p>
-        </div>
+    <ul>
+        <li>Preparación y manejo de piscinas camaroneras</li>
+        <li>Control de calidad del agua y alimentación</li>
+        <li>Monitoreo sanitario permanente</li>
+        <li>Cosecha bajo protocolos establecidos</li>
+        <li>Procesamiento y conservación del producto</li>
+    </ul>
 
-        <div class="product">
-            <h3>Camarón Premium de Exportación</h3>
-            <p>Selección especial para mercados internacionales exigentes.</p>
-        </div>
+    <h3>Calidad y Normativas</h3>
+    <p>
+        La empresa cumple con normativas sanitarias y de calidad exigidas por los
+        organismos reguladores, garantizando un producto seguro para el consumo.
+    </p>
+</section>
 
-        <div class="product">
-            <h3>Camarón Procesado</h3>
-            <p>Producto con valor agregado listo para distribución comercial.</p>
-        </div>
-    </div>
-</div>
+<section id="productos">
+    <h2>Portafolio de Productos</h2>
+    <p>
+        MARFIGAN S.A. ofrece una variedad de productos adaptados a diferentes mercados
+        y necesidades comerciales.
+    </p>
 
-<div class="contact" id="contacto">
-    <h2>Contacto</h2>
-    <p>📧 contacto@marfigan.com</p>
-    <p>📞 +593 99 999 9999</p>
-    <p>📍 Ecuador</p>
-</div>
+    <table>
+        <tr>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Destino</th>
+        </tr>
+        <tr>
+            <td>Camarón Entero Fresco</td>
+            <td>Cosechado bajo controles sanitarios estrictos.</td>
+            <td>Mercado nacional</td>
+        </tr>
+        <tr>
+            <td>Camarón Entero Congelado</td>
+            <td>Producto conservado para mantener frescura y calidad.</td>
+            <td>Exportación</td>
+        </tr>
+        <tr>
+            <td>Camarón sin Cabeza</td>
+            <td>Presentación procesada para uso industrial.</td>
+            <td>Exportación</td>
+        </tr>
+        <tr>
+            <td>Camarón Clasificado por Talla</td>
+            <td>Estandarización según requerimientos comerciales.</td>
+            <td>Mercados internacionales</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contacto">
+    <h2>Contacto Empresarial</h2>
+    <p>📧 Correo electrónico: contacto@marfigan.com</p>
+    <p>📞 Teléfono: +593 99 999 9999</p>
+    <p>📍 Ubicación: Ecuador</p>
+</section>
 
 <footer>
-    © 2026 MARFIGAN | Empresa Camaronera Ecuatoriana
+    © 2026 MARFIGAN S.A. | Empresa Camaronera Ecuatoriana
 </footer>
 
 </body>
