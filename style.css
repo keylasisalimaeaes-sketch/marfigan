@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1a1a1a;
+}
+
+/* HEADER */
+.main-header {
+    background: linear-gradient(135deg, #0f6c78, #0b3c5d);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header-container h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+.header-container p {
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9fffd4;
+}
+
+/* SECCIONES */
+.section {
+    background: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #0b3c5d;
+    text-align: center;
+}
+
+.section p, .section li {
+    font-size: 20px;
+}
+
+/* TARJETAS MISION VISION OBJETIVOS */
+.empresa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 85%;
+    margin: auto;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-top: 6px solid #0f6c78;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 26px;
+    color: #0b3c5d;
+}
+
+.card p, .card li {
+    font-size: 18px;
+}
+
+/* PRODUCTOS */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.producto {
+    background: #e3f2f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.producto h3 {
+    font-size: 18px;
+    color: #0b3c5d;
+}
+
+.producto p {
+    font-size: 14px;
+}
+
+/* CONTACTO */
+.contacto {
+    background: linear-gradient(135deg, #0b3c5d, #0f6c78);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.contacto h2 {
+    font-size: 36px;
+}
+
+.contacto p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #0b3c5d;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
